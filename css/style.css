@@ -1,0 +1,381 @@
+/*-- TYPOGRAPHY --*/
+    
+    @font-face {
+    font-family: 'antic_slabregular';
+    src: url('../fonts/anticslab-regular-webfont.eot');
+    src: url('../fonts/anticslab-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/anticslab-regular-webfont.woff') format('woff'),
+         url('../fonts/anticslab-regular-webfont.ttf') format('truetype'),
+         url('../fonts/anticslab-regular-webfont.svg#antic_slabregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    body, .counter, a, fieldset input{
+        font-family: "Lucida Grande", "Arial", "Verdana", sans-serif;
+    }
+
+    h1, legend, #submit{
+        font-family: "Antic Slab", "antic_slabregular", serif;
+    }
+
+    h1{
+        font-weight: normal;
+    }
+
+    h2{
+        color: #b3e3ff;
+        font-size: .75em;
+        font-weight: normal;
+    }
+
+    legend{
+        color: #125E77;
+        font-size: 1.3em;
+        letter-spacing: .8;
+    }
+
+    legend:before{
+        color: #FFFFFF;
+        font-size: .65em;
+    }
+
+    #checkbox-label{
+        font-size: .65em;
+    }
+
+    a{
+        font-size: .65em;
+        color: #52A3D4;
+    }
+
+    fieldset input{
+        color: #444;
+        font-size: .8em;
+    }
+
+    label{
+        color: #444444;
+        font-size: .75em;
+    }
+
+    #portfolio-address-suffix{
+        color: #999999;
+        font-size: 15px;
+    }
+
+    .note{
+        color: #AAAAAA;
+        font-size: .65em;
+    }
+
+    input[type=submit]{
+        font-size: 1em;
+        color: white;
+    }
+
+
+/*-- CONTAINERS --*/
+
+	body{
+		background-color: #b3e3ff;
+		margin-top: 40px;
+		margin-bottom: 60px;
+	}
+
+	header, form{
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	header{
+		color: #FFFFFF;
+		background-color: #125E77;
+	  		background-image: -webkit-gradient(linear, left top, left bottom, from(#167893), to(#125E77)); /* Chrome, Safari 4+ */
+	  		background-image: -webkit-linear-gradient(top, #167893, #125E77); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+	  		background-image:    -moz-linear-gradient(top, #167893, #125E77); /* Firefox 3.6-15 */
+	  		background-image:      -o-linear-gradient(top, #167893, #125E77); /* Opera 11.10-12.00 */
+	  		background-image:         linear-gradient(to bottom, #167893, #125E77); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+	  	border: 1px solid #146c86;
+	  	border-top-left-radius: 5px;
+	  	border-top-right-radius: 5px;
+	  	padding: 30px 39px 15px 39px;
+		box-shadow: -1px 1px 3px 0px rgba(255,255,255,.2) inset; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+	  		-webkit-box-shadow: -1px 1px 3px 0px rgba(255,255,255,.2) inset; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */        
+	}
+
+	form{
+	background-color: #FFFFFF;
+	padding: 20px 40px 40px 40px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	}
+
+/*-- FIELDSET CONTAINERS --*/
+	
+	#portfolio-set,
+	#account-set,
+	#payment-set{
+        border: none;
+        margin: 15px 0 30px 0;
+		}
+        #portfolio-set .input-container{
+            padding-bottom: 25px;
+        }
+
+    .input-container{
+        background-color: #F3F5f5;
+        border: none;
+        border-radius: 5px;
+        padding: 35px 15px 35px 35px;
+    }
+
+/*-- FIELDSET HEADERS --*/
+	
+	h1{
+		margin: 0;
+	}
+
+	h2{
+		margin-top: 5px;
+	}
+
+	legend{
+		width: 100%;
+		position: relative;
+	}
+		legend a{
+			float: right;
+			position: relative;
+			left: -2px;
+			top: 7px;
+			text-decoration: none;
+		}
+		legend a:hover{
+			text-decoration: underline;
+		}
+		legend:before{
+			position: absolute;
+			left: -72px;
+			bottom: -8px;
+			background-color: #52A3D4;
+			border: 6px solid #FFFFFF;
+			padding: 5px 7px 8px 7px;
+			border-radius: 50%;
+			height: 15px;
+			width: 15px;
+			text-align: center;
+			vertical-align: middle;
+		}
+		fieldset:nth-child(1) legend:before{
+			content:"1";
+		}
+		fieldset:nth-child(2) legend:before{
+			content:"2";
+		}
+		fieldset:nth-child(3) legend:before{
+			content:"3";
+		}
+
+/*-- INPUTS --*/
+
+	label, input{
+		display: block;
+	}
+
+	fieldset input{
+		width: 92%;
+		margin-bottom: 20px;
+		padding: 0px 10px 0px 10px;
+		height: 32px;
+		border: 1px solid #CCCCCC;
+		border-radius: 3px;
+	}
+		.rgba.boxshadow fieldset input{
+			border: none;
+			box-shadow: 0px 1px 2px 0px rgba(0,0,0,.3) inset; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+	  			-webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,.3) inset; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+		}
+		fieldset input[type=text]:focus,
+		fieldset input[type=email]:focus,
+		fieldset input[type=password]:focus{
+			outline: none;
+			background-color: #F5FBFE;
+		}
+		fieldset input[type=radio]{
+			width: auto;
+			margin: 0;
+			display: inline;
+		}
+
+	#portfolio-address{
+		width: 62%;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	#password{
+		margin-bottom: 2px;
+	}
+
+	#show-password{
+		width: auto;
+		position: relative;
+		right: 3px;
+		margin-bottom: 0;
+		height: 12px;
+	}
+
+	#card-number{
+		width: 54%;
+	}
+
+	#card-type-container{
+		border: none;
+		padding-left: 0;
+		margin-bottom: 10px;
+	}
+		.js #card-type-container{
+			margin-bottom: 0px;
+			width: 177px;
+			height: 18px;
+			background-image: url(../images/sprite.png);
+			background-position: 0px -122px;
+			vertical-align: middle;
+		}
+			.js #card-type-container.amex{
+				background-position: 0px -164px;
+			}
+			.js #card-type-container.visa{
+				background-position: 0px -206px;
+			}
+			.js #card-type-container.discover{
+				background-position: 0px -248px;
+			}
+			.js #card-type-container.mastercard{
+				background-position: 0px -290px;
+			}
+
+	#security-code{
+		width: 10%;
+	}
+
+	.js #security-code-img{
+		width: 100px;
+		height: 34px;
+		margin: 0;
+		display: inline-block;
+		vertical-align: middle;
+		background-image: url(../images/sprite.png);
+		background-position: 0px 144px;
+	}
+		.js #security-code-img.amex-img{
+			background-position: 0px 187px;
+		}
+
+/*-- LABELS AND MISC --*/
+
+	label{
+		margin-bottom: 5px;
+	}
+
+	#lock{
+		text-indent: -9999px;
+		float: right;
+		overflow: hidden;
+		width: 24px;
+		height: 46px;
+		background-image: url(../images/sprite.png);
+		background-position: -54px -473px;
+	}
+
+	.card-type-label{
+		position: relative;
+		bottom: 9px;
+		margin-right: 20px;
+	}
+
+	#portfolio-address-suffix{
+		position: relative;
+		right: 7px;
+		padding: 6px 33px 8px 34px;
+		background: #FAFAFA;
+		border: 1px solid #CCCCCC;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+	}
+		.rgba.boxshadow #portfolio-address-suffix{
+			border: none;
+			box-shadow: 0px 1px 2px 0px rgba(0,0,0,.3) inset; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+	  		-webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,.3) inset; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+		}
+
+	.note{
+		position: relative;
+		bottom: 15px;
+	}
+
+	#checkbox-label{
+		position: relative;
+		right: 6px;
+	}
+
+    label.error{
+        position:relative;
+    }
+
+/*-- SUBMIT BUTTON --*/
+
+input[type=submit]{
+	margin: 0 auto;
+	background-color: #7E9B32;
+  		background-image: -webkit-gradient(linear, left top, left bottom, from(#90A933), to(#7E9B32)); /* Chrome, Safari 4+ */
+  		background-image: -webkit-linear-gradient(top, #90A933, #7E9B32); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  		background-image:    -moz-linear-gradient(top, #90A933, #7E9B32); /* Firefox 3.6-15 */
+  		background-image:      -o-linear-gradient(top, #90A933, #7E9B32); /* Opera 11.10-12.00 */
+  		background-image:         linear-gradient(to bottom, #90A933, #7E9B32); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+  	box-shadow: -1px 1px 3px 0px rgba(255,255,255,.2) inset; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+  		-webkit-box-shadow: -1px 1px 3px 0px rgba(255,255,255,.2) inset; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+  	border: 1px solid #7B992B;
+  	border-radius: 5px;
+  	padding: 7px 15px 8px 15px;
+}
+	input[type=submit]:hover{
+	background-color: #89a837;
+  		background-image: -webkit-gradient(linear, left top, left bottom, from(#9AB537), to(#89a837)); /* Chrome, Safari 4+ */
+  		background-image: -webkit-linear-gradient(top, #9AB537, #89a837); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  		background-image:    -moz-linear-gradient(top, #9AB537, #89a837); /* Firefox 3.6-15 */
+  		background-image:      -o-linear-gradient(top, #9AB537, #89a837); /* Opera 11.10-12.00 */
+  		background-image:         linear-gradient(to bottom, #9AB537, #89a837); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+  	}
+  	input[type=submit]:active{
+	background-color: #677F29;
+  		background-image: -webkit-gradient(linear, left top, left bottom, from(#677F29), to(#7b902b)); /* Chrome, Safari 4+ */
+  		background-image: -webkit-linear-gradient(top, #677F29, #7b902b); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  		background-image:    -moz-linear-gradient(top, #677F29, #7b902b); /* Firefox 3.6-15 */
+  		background-image:      -o-linear-gradient(top, #677F29, #7b902b); /* Opera 11.10-12.00 */
+  		background-image:         linear-gradient(to bottom, #677F29, #7b902b); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+  	box-shadow: -1px 1px 3px 0px rgba(0,0,0,.2) inset; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+  		-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,.2) inset; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+  	padding: 8px 15px 7px 15px;
+  	}
+  	input[type=submit]:focus{
+  	outline: none;
+    border: 1px solid #444;
+    background-color: #89a837;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#9AB537), to(#89a837)); /* Chrome, Safari 4+ */
+        background-image: -webkit-linear-gradient(top, #9AB537, #89a837); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+        background-image:    -moz-linear-gradient(top, #9AB537, #89a837); /* Firefox 3.6-15 */
+        background-image:      -o-linear-gradient(top, #9AB537, #89a837); /* Opera 11.10-12.00 */
+        background-image:         linear-gradient(to bottom, #9AB537, #89a837); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+ 
+  	}
+
+ /*-- FIXES --*/
+	
+	.inline{
+		display: inline;
+	}
+	.hidden{
+		display: none !important;
+	}

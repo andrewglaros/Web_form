@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<title>AUX Challenge 02</title>
+
+	<!-- stylesheets -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- google fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>
+
+	<!-- modernizr -->
+	<script src="js/modernizr.custom.02399.js"></script>
+</head>
+
+<body>
+	<header role="banner">
+	<h1>Ain't nobody got time fo dis!</h1>
+	<h2>Hide yo kids, hide yo wife, hide yo husband.</h2>
+	</header>
+	
+	<form id="form" role="main">
+		<fieldset id="portfolio-set">
+			<legend class="fieldset-header">First, name your portfolio</legend>
+			<div class="input-container">
+    			<label for="portfolio-title">Portfolio title</label>
+    			<input type="text" id="portfolio-title" name="portfolioTitle" aria-required="true"autofocus required>
+
+    			<label for="portfolio-address">Portfolio address</label>
+    			<input type="text" id="portfolio-address" name="portfolioAddress" class="inline" aria-required="true" required>
+    			<label for="portfolio-address" id="portfolio-address-suffix" class="inline">.sample.com</label>
+            </div>
+		</fieldset>
+
+		<fieldset id="account-set">
+			<legend class="fieldset-header">Now, enter your account details</legend>
+
+            <div class="input-container">
+    			<label for="name">Name</label>
+    			<input type="text" id="name" name="name" aria-required="true" required>
+
+    			<label for="email">Email</label>
+    			<input type="email" id="email" name="email" aria-required="true" required>
+    			<label for="email" class="note" id="email-note">NOTE: We'll never share your email, promise.</label>
+
+    			<label for="password">Password</label>
+    			<input type="password" id="password" name="password" aria-required="true" required>
+    			
+    			<input type="checkbox" class="checkbox inline" id="show-password" name="showPassword" style="display:none">
+    			<label for="show-password" class="inline" id="checkbox-label" style="display:none">Show Password</label>
+            </div>
+		</fieldset>
+
+		<fieldset id="payment-set">
+			<legend class="fieldset-header">Finally, enter your payment information<a href="http://www.paypal.com"> Use PayPal</a></legend>
+
+            <div class="input-container">
+    			<label for="card-number">Card number</label>
+    			<input type="text" id="card-number" name="cardNumber" class="inline" aria-required="true" required>
+
+    			<fieldset id="card-type-container" class="inline">
+    				<input type="radio" name="cardType" value="amex" id="amex" name="amex" class="card-type" aria-required="true" required>
+    				<label for="amex" class="card-type-label inline">Amex</label>
+    				
+    				<input type="radio" name="cardType" value="visa" id="visa" name="visa" class="card-type" aria-required="true" required>
+    				<label for="visa" class="card-type-label inline">Visa</label>
+
+    				<input type="radio" name="cardType" value="discover" id="discover" name="discover" class="card-type" aria-required="true" required>
+    				<label for="discover" class="card-type-label inline">Discover</label>
+
+    				<input type="radio" name="cardType" value="mastercard" id="mastercard" name="mastercard" class="card-type" aria-required="true" required>
+    				<label for="mastercard" class="card-type-label inline">Mastercard</label>
+    			</fieldset>
+
+    			<label for="security-code">Security code</label>
+    			<input type="text" id="security-code" name="securityCode" class="inline" maxlength="4" aria-required="true" required>
+    			<label for="security-code" id="security-code-img" class="hidden"></label>
+
+    			<label>Expiration date</label>
+    			<select id="month" name="month">
+    				<option>01 January</option>
+    				<option>02 February</option>
+    				<option>03 March</option>
+    				<option>04 April</option>
+    				<option>05 May</option>
+    				<option>06 June</option>
+    				<option>07 July</option>
+    				<option>08 August</option>
+    				<option>09 September</option>
+    				<option>10 October</option>
+    				<option>11 November</option>
+    				<option>12 December</option>
+    			</select>
+    			<select id="year" name="year">
+    				<option>2013</option>
+    				<option>2014</option>
+    				<option>2015</option>
+    				<option>2016</option>
+    			</select>
+			
+                <div id="lock">Your information is secure.</div>
+            </div>
+        </fieldset>
+		
+		<input type="submit" id="submit" name="submit" value="Create your portfolio">
+	
+	</form>
+
+</body>
+
+    <script>
+        Modernizr.load([
+            { // always load jquery and custom script
+                load : ['http://code.jquery.com/jquery-1.10.1.min.js',
+                    'http://code.jquery.com/jquery-migrate-1.2.1.min.js',
+                    'js/script.js']
+            },
+            { // load js validation if html5 validation is not available
+                test : Modernizr.input.autofocus && Modernizr.input.required && Modernizr.input.email,
+                yep : ['js/jquery.validate.js', 'js/validate.js']
+            }
+        ]);
+    </script>
+
+</html>
