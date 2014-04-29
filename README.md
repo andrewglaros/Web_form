@@ -1,8 +1,6 @@
 Web_form
 ========
 
-Useful reference for web form code.
-
-Coded this as a challenge in Fresh Tilled Soil's apprentice program.
+Reference for web form code. Incl. html/js validation and fallbacks.
 
 by Andrew Glaros
